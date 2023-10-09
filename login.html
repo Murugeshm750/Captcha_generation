@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form id="loginForm" action="/index.html" onsubmit="return validCap()">
+        <div class="login-container">
+            <div class="left-side">
+                    <div class="alert" id="captchaCorrect">Captcha correct!</div>
+                <div class="alert-error" id="captchaIncorrect">Captcha incorrect!</div>
+                <div class="input">
+                    <label for="uname">Username</label>
+                    <input type="text" id="uname" required>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input">
+                    <label for="textinput">Captcha</label>
+                    <input type="text" id="textinput">
+                </div>
+                <div class="input">
+                    <input type="text" id="capt" readonly>
+                    <div class="refresh-img">
+                        <img src="/images/refresh-page-option.png" alt="refresh" onclick="cap()" style="width: 25px; cursor: pointer;">
+                    </div>
+                    <button class="btn-Submit" type="submit">Login</button>
+                </div>
+               
+                
+            </div>
+            <div class="right-side">
+                <img src="/images/world.png" style="width: 400px;">
+            </div>
+        </div>
+    </form>
+
+    <script src="/js.js"></script>
+
+</body>
+</html>

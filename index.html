@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <div class="captcha-container">
+    <div class="alert">Captcha correct !</div>
+    <div class="alert-error">Captcha Incorrect !</div>
+    <div id="refresh">
+        <input type="text" id="capt" readonly="readonly">
+       <img src="/images/refresh-page-option.png" alt="refresh" onclick="cap()" style="width: 25px; cursor: pointer;">
+    </div>
+    <br>
+    <input type="text" id="textinput">
+    <button onclick="validCap()">Check</button>
+   </div> 
+
+    <script src="/js.js"></script>
+</body>
+</html>
